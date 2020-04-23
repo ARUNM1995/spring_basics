@@ -7,9 +7,31 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-<bean id="car" class="com.oehm.demo.Car">
-	<property name="carName" value="Tata nexon"></property>
-</bean>
+	<bean id="car" class="com.oehm.demo.Car">
+		<property name="carName" value="Tata nexon"></property>
+	</bean>
+
+
+	<bean id="model" class="com.oehm.demo.Model">
+		<property name="modelId" value="100"></property>
+		<property name="cost" value="39000.0"></property>
+		<constructor-arg name="modelName" value="oneplus7t"></constructor-arg>
+		<constructor-arg name="type" value="Mobile"></constructor-arg>
+		<constructor-arg name="features" value="Android"></constructor-arg>
+	</bean>
+
+
+	<bean id="brand" class="com.oehm.demo.Brand">
+		<property name="brandName" value="oneplus"></property>
+		<property name="model" ref="model"></property>
+	</bean>
+
+
+
+
+
+
+
 
 
 
