@@ -6,10 +6,16 @@ public class Test {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring-web.xml");
-			//Brand brand = context.getBean(Brand.class);
+			
+		//Person person = context.getBean(Person.class);
+		//System.out.println(person);
+		BookTicket bookTicket = context.getBean(BookTicket.class);
+		//BookTicket bookTicket1 = context.getBean(BookTicket.class);
+		
+		//Brand brand = context.getBean(Brand.class);
 			//Model model = context.getBean(Model.class);
-			Brand brand = context.getBean(Brand.class);
-			System.out.println(brand);
+		//	Brand brand = context.getBean(Brand.class);
+			//System.out.println(brand);
 			
 			//System.out.println(model);
 		//int count = context.getBeanDefinitionCount();

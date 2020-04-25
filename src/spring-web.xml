@@ -6,8 +6,9 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<context:component-scan base-package="com.oehm.demo"></context:component-scan>
 
-	<bean id="car" class="com.oehm.demo.Car">
+	<bean id="car" class="com.oehm.demo.Car" scope="singleton">
 		<property name="carName" value="Tata nexon"></property>
 	</bean>
 
